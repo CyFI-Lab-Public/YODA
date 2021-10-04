@@ -1,0 +1,1258 @@
+[
+  {
+    "attributes": {
+      "startLine": 2,
+      "endLine": 16
+    },
+    "nodeType": "Stmt_Function",
+    "stmts": [
+      {
+        "elseifs": [],
+        "else": null,
+        "cond": {
+          "name": {
+            "name": "_uri",
+            "nodeType": "Identifier",
+            "attributes": {
+              "startLine": 3,
+              "endLine": 3
+            }
+          },
+          "var": {
+            "name": "this",
+            "nodeType": "Expr_Variable",
+            "attributes": {
+              "startLine": 3,
+              "endLine": 3
+            }
+          },
+          "nodeType": "Expr_PropertyFetch",
+          "attributes": {
+            "startLine": 3,
+            "endLine": 3
+          }
+        },
+        "nodeType": "Stmt_If",
+        "stmts": [
+          {
+            "elseifs": [],
+            "else": null,
+            "cond": {
+              "attributes": {
+                "startLine": 4,
+                "endLine": 4
+              },
+              "nodeType": "Expr_BooleanNot",
+              "expr": {
+                "name": {
+                  "attributes": {
+                    "startLine": 4,
+                    "endLine": 4
+                  },
+                  "parts": [
+                    "file_exists"
+                  ],
+                  "nodeType": "Name"
+                },
+                "attributes": {
+                  "startLine": 4,
+                  "endLine": 4
+                },
+                "nodeType": "Expr_FuncCall",
+                "args": [
+                  {
+                    "unpack": false,
+                    "attributes": {
+                      "startLine": 4,
+                      "endLine": 4
+                    },
+                    "byRef": false,
+                    "nodeType": "Arg",
+                    "value": {
+                      "attributes": {
+                        "startLine": 4,
+                        "endLine": 4
+                      },
+                      "right": {
+                        "attributes": {
+                          "startLine": 4,
+                          "endLine": 4,
+                          "kind": 1
+                        },
+                        "nodeType": "Scalar_String",
+                        "value": ".dat"
+                      },
+                      "nodeType": "Expr_BinaryOp_Concat",
+                      "left": {
+                        "attributes": {
+                          "startLine": 4,
+                          "endLine": 4
+                        },
+                        "right": {
+                          "name": {
+                            "attributes": {
+                              "startLine": 4,
+                              "endLine": 4
+                            },
+                            "parts": [
+                              "md5"
+                            ],
+                            "nodeType": "Name"
+                          },
+                          "attributes": {
+                            "startLine": 4,
+                            "endLine": 4
+                          },
+                          "nodeType": "Expr_FuncCall",
+                          "args": [
+                            {
+                              "unpack": false,
+                              "attributes": {
+                                "startLine": 4,
+                                "endLine": 4
+                              },
+                              "byRef": false,
+                              "nodeType": "Arg",
+                              "value": {
+                                "name": {
+                                  "name": "_uri",
+                                  "nodeType": "Identifier",
+                                  "attributes": {
+                                    "startLine": 4,
+                                    "endLine": 4
+                                  }
+                                },
+                                "var": {
+                                  "name": "this",
+                                  "nodeType": "Expr_Variable",
+                                  "attributes": {
+                                    "startLine": 4,
+                                    "endLine": 4
+                                  }
+                                },
+                                "nodeType": "Expr_PropertyFetch",
+                                "attributes": {
+                                  "startLine": 4,
+                                  "endLine": 4
+                                }
+                              }
+                            }
+                          ]
+                        },
+                        "nodeType": "Expr_BinaryOp_Concat",
+                        "left": {
+                          "name": {
+                            "name": "_cacheFolder",
+                            "nodeType": "Identifier",
+                            "attributes": {
+                              "startLine": 4,
+                              "endLine": 4
+                            }
+                          },
+                          "var": {
+                            "name": "this",
+                            "nodeType": "Expr_Variable",
+                            "attributes": {
+                              "startLine": 4,
+                              "endLine": 4
+                            }
+                          },
+                          "nodeType": "Expr_PropertyFetch",
+                          "attributes": {
+                            "startLine": 4,
+                            "endLine": 4
+                          }
+                        }
+                      }
+                    }
+                  }
+                ]
+              }
+            },
+            "nodeType": "Stmt_If",
+            "stmts": [
+              {
+                "attributes": {
+                  "startLine": 5,
+                  "endLine": 5
+                },
+                "nodeType": "Stmt_Expression",
+                "expr": {
+                  "attributes": {
+                    "startLine": 5,
+                    "endLine": 5
+                  },
+                  "var": {
+                    "name": "heads",
+                    "nodeType": "Expr_Variable",
+                    "attributes": {
+                      "startLine": 5,
+                      "endLine": 5
+                    }
+                  },
+                  "nodeType": "Expr_Assign",
+                  "expr": {
+                    "name": {
+                      "attributes": {
+                        "startLine": 5,
+                        "endLine": 5
+                      },
+                      "parts": [
+                        "get_head"
+                      ],
+                      "nodeType": "Name"
+                    },
+                    "attributes": {
+                      "startLine": 5,
+                      "endLine": 5
+                    },
+                    "nodeType": "Expr_FuncCall",
+                    "args": [
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 5,
+                          "endLine": 5
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "attributes": {
+                            "startLine": 5,
+                            "endLine": 5
+                          },
+                          "right": {
+                            "name": {
+                              "name": "_uri",
+                              "nodeType": "Identifier",
+                              "attributes": {
+                                "startLine": 5,
+                                "endLine": 5
+                              }
+                            },
+                            "var": {
+                              "name": "this",
+                              "nodeType": "Expr_Variable",
+                              "attributes": {
+                                "startLine": 5,
+                                "endLine": 5
+                              }
+                            },
+                            "nodeType": "Expr_PropertyFetch",
+                            "attributes": {
+                              "startLine": 5,
+                              "endLine": 5
+                            }
+                          },
+                          "nodeType": "Expr_BinaryOp_Concat",
+                          "left": {
+                            "attributes": {
+                              "startLine": 5,
+                              "endLine": 5
+                            },
+                            "right": {
+                              "attributes": {
+                                "startLine": 5,
+                                "endLine": 5,
+                                "kind": 2
+                              },
+                              "nodeType": "Scalar_String",
+                              "value": "/"
+                            },
+                            "nodeType": "Expr_BinaryOp_Concat",
+                            "left": {
+                              "attributes": {
+                                "startLine": 5,
+                                "endLine": 5
+                              },
+                              "right": {
+                                "name": {
+                                  "name": "_host",
+                                  "nodeType": "Identifier",
+                                  "attributes": {
+                                    "startLine": 5,
+                                    "endLine": 5
+                                  }
+                                },
+                                "var": {
+                                  "name": "this",
+                                  "nodeType": "Expr_Variable",
+                                  "attributes": {
+                                    "startLine": 5,
+                                    "endLine": 5
+                                  }
+                                },
+                                "nodeType": "Expr_PropertyFetch",
+                                "attributes": {
+                                  "startLine": 5,
+                                  "endLine": 5
+                                }
+                              },
+                              "nodeType": "Expr_BinaryOp_Concat",
+                              "left": {
+                                "name": {
+                                  "name": "_server",
+                                  "nodeType": "Identifier",
+                                  "attributes": {
+                                    "startLine": 5,
+                                    "endLine": 5
+                                  }
+                                },
+                                "var": {
+                                  "name": "this",
+                                  "nodeType": "Expr_Variable",
+                                  "attributes": {
+                                    "startLine": 5,
+                                    "endLine": 5
+                                  }
+                                },
+                                "nodeType": "Expr_PropertyFetch",
+                                "attributes": {
+                                  "startLine": 5,
+                                  "endLine": 5
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              },
+              {
+                "elseifs": [],
+                "else": {
+                  "attributes": {
+                    "startLine": 9,
+                    "endLine": 12
+                  },
+                  "nodeType": "Stmt_Else",
+                  "stmts": [
+                    {
+                      "attributes": {
+                        "startLine": 10,
+                        "endLine": 10
+                      },
+                      "nodeType": "Stmt_Expression",
+                      "expr": {
+                        "attributes": {
+                          "startLine": 10,
+                          "endLine": 10
+                        },
+                        "var": {
+                          "name": "response",
+                          "nodeType": "Expr_Variable",
+                          "attributes": {
+                            "startLine": 10,
+                            "endLine": 10
+                          }
+                        },
+                        "nodeType": "Expr_Assign",
+                        "expr": {
+                          "name": {
+                            "attributes": {
+                              "startLine": 10,
+                              "endLine": 10
+                            },
+                            "parts": [
+                              "file_get_contents"
+                            ],
+                            "nodeType": "Name"
+                          },
+                          "attributes": {
+                            "startLine": 10,
+                            "endLine": 10
+                          },
+                          "nodeType": "Expr_FuncCall",
+                          "args": [
+                            {
+                              "unpack": false,
+                              "attributes": {
+                                "startLine": 10,
+                                "endLine": 10
+                              },
+                              "byRef": false,
+                              "nodeType": "Arg",
+                              "value": {
+                                "attributes": {
+                                  "startLine": 10,
+                                  "endLine": 10
+                                },
+                                "right": {
+                                  "name": {
+                                    "name": "_uri",
+                                    "nodeType": "Identifier",
+                                    "attributes": {
+                                      "startLine": 10,
+                                      "endLine": 10
+                                    }
+                                  },
+                                  "var": {
+                                    "name": "this",
+                                    "nodeType": "Expr_Variable",
+                                    "attributes": {
+                                      "startLine": 10,
+                                      "endLine": 10
+                                    }
+                                  },
+                                  "nodeType": "Expr_PropertyFetch",
+                                  "attributes": {
+                                    "startLine": 10,
+                                    "endLine": 10
+                                  }
+                                },
+                                "nodeType": "Expr_BinaryOp_Concat",
+                                "left": {
+                                  "attributes": {
+                                    "startLine": 10,
+                                    "endLine": 10
+                                  },
+                                  "right": {
+                                    "attributes": {
+                                      "startLine": 10,
+                                      "endLine": 10,
+                                      "kind": 2
+                                    },
+                                    "nodeType": "Scalar_String",
+                                    "value": "/"
+                                  },
+                                  "nodeType": "Expr_BinaryOp_Concat",
+                                  "left": {
+                                    "attributes": {
+                                      "startLine": 10,
+                                      "endLine": 10
+                                    },
+                                    "right": {
+                                      "name": {
+                                        "name": "_host",
+                                        "nodeType": "Identifier",
+                                        "attributes": {
+                                          "startLine": 10,
+                                          "endLine": 10
+                                        }
+                                      },
+                                      "var": {
+                                        "name": "this",
+                                        "nodeType": "Expr_Variable",
+                                        "attributes": {
+                                          "startLine": 10,
+                                          "endLine": 10
+                                        }
+                                      },
+                                      "nodeType": "Expr_PropertyFetch",
+                                      "attributes": {
+                                        "startLine": 10,
+                                        "endLine": 10
+                                      }
+                                    },
+                                    "nodeType": "Expr_BinaryOp_Concat",
+                                    "left": {
+                                      "name": {
+                                        "name": "_server",
+                                        "nodeType": "Identifier",
+                                        "attributes": {
+                                          "startLine": 10,
+                                          "endLine": 10
+                                        }
+                                      },
+                                      "var": {
+                                        "name": "this",
+                                        "nodeType": "Expr_Variable",
+                                        "attributes": {
+                                          "startLine": 10,
+                                          "endLine": 10
+                                        }
+                                      },
+                                      "nodeType": "Expr_PropertyFetch",
+                                      "attributes": {
+                                        "startLine": 10,
+                                        "endLine": 10
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          ]
+                        }
+                      }
+                    },
+                    {
+                      "attributes": {
+                        "startLine": 11,
+                        "endLine": 11
+                      },
+                      "nodeType": "Stmt_Expression",
+                      "expr": {
+                        "name": {
+                          "attributes": {
+                            "startLine": 11,
+                            "endLine": 11
+                          },
+                          "parts": [
+                            "file_put_contents"
+                          ],
+                          "nodeType": "Name"
+                        },
+                        "attributes": {
+                          "startLine": 11,
+                          "endLine": 11
+                        },
+                        "nodeType": "Expr_FuncCall",
+                        "args": [
+                          {
+                            "unpack": false,
+                            "attributes": {
+                              "startLine": 11,
+                              "endLine": 11
+                            },
+                            "byRef": false,
+                            "nodeType": "Arg",
+                            "value": {
+                              "attributes": {
+                                "startLine": 11,
+                                "endLine": 11
+                              },
+                              "right": {
+                                "attributes": {
+                                  "startLine": 11,
+                                  "endLine": 11,
+                                  "kind": 1
+                                },
+                                "nodeType": "Scalar_String",
+                                "value": ".dat"
+                              },
+                              "nodeType": "Expr_BinaryOp_Concat",
+                              "left": {
+                                "attributes": {
+                                  "startLine": 11,
+                                  "endLine": 11
+                                },
+                                "right": {
+                                  "name": {
+                                    "attributes": {
+                                      "startLine": 11,
+                                      "endLine": 11
+                                    },
+                                    "parts": [
+                                      "md5"
+                                    ],
+                                    "nodeType": "Name"
+                                  },
+                                  "attributes": {
+                                    "startLine": 11,
+                                    "endLine": 11
+                                  },
+                                  "nodeType": "Expr_FuncCall",
+                                  "args": [
+                                    {
+                                      "unpack": false,
+                                      "attributes": {
+                                        "startLine": 11,
+                                        "endLine": 11
+                                      },
+                                      "byRef": false,
+                                      "nodeType": "Arg",
+                                      "value": {
+                                        "name": {
+                                          "name": "_uri",
+                                          "nodeType": "Identifier",
+                                          "attributes": {
+                                            "startLine": 11,
+                                            "endLine": 11
+                                          }
+                                        },
+                                        "var": {
+                                          "name": "this",
+                                          "nodeType": "Expr_Variable",
+                                          "attributes": {
+                                            "startLine": 11,
+                                            "endLine": 11
+                                          }
+                                        },
+                                        "nodeType": "Expr_PropertyFetch",
+                                        "attributes": {
+                                          "startLine": 11,
+                                          "endLine": 11
+                                        }
+                                      }
+                                    }
+                                  ]
+                                },
+                                "nodeType": "Expr_BinaryOp_Concat",
+                                "left": {
+                                  "name": {
+                                    "name": "_cacheFolder",
+                                    "nodeType": "Identifier",
+                                    "attributes": {
+                                      "startLine": 11,
+                                      "endLine": 11
+                                    }
+                                  },
+                                  "var": {
+                                    "name": "this",
+                                    "nodeType": "Expr_Variable",
+                                    "attributes": {
+                                      "startLine": 11,
+                                      "endLine": 11
+                                    }
+                                  },
+                                  "nodeType": "Expr_PropertyFetch",
+                                  "attributes": {
+                                    "startLine": 11,
+                                    "endLine": 11
+                                  }
+                                }
+                              }
+                            }
+                          },
+                          {
+                            "unpack": false,
+                            "attributes": {
+                              "startLine": 11,
+                              "endLine": 11
+                            },
+                            "byRef": false,
+                            "nodeType": "Arg",
+                            "value": {
+                              "name": "response",
+                              "nodeType": "Expr_Variable",
+                              "attributes": {
+                                "startLine": 11,
+                                "endLine": 11
+                              }
+                            }
+                          }
+                        ]
+                      }
+                    }
+                  ]
+                },
+                "cond": {
+                  "attributes": {
+                    "startLine": 7,
+                    "endLine": 7
+                  },
+                  "right": {
+                    "name": {
+                      "attributes": {
+                        "startLine": 7,
+                        "endLine": 7
+                      },
+                      "parts": [
+                        "preg_match"
+                      ],
+                      "nodeType": "Name"
+                    },
+                    "attributes": {
+                      "startLine": 7,
+                      "endLine": 7
+                    },
+                    "nodeType": "Expr_FuncCall",
+                    "args": [
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 7,
+                          "endLine": 7
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "attributes": {
+                            "startLine": 7,
+                            "endLine": 7,
+                            "kind": 1
+                          },
+                          "nodeType": "Scalar_String",
+                          "value": "#500#"
+                        }
+                      },
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 7,
+                          "endLine": 7
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "name": "heads",
+                          "nodeType": "Expr_Variable",
+                          "attributes": {
+                            "startLine": 7,
+                            "endLine": 7
+                          }
+                        }
+                      }
+                    ]
+                  },
+                  "nodeType": "Expr_BinaryOp_BooleanOr",
+                  "left": {
+                    "name": {
+                      "attributes": {
+                        "startLine": 7,
+                        "endLine": 7
+                      },
+                      "parts": [
+                        "preg_match"
+                      ],
+                      "nodeType": "Name"
+                    },
+                    "attributes": {
+                      "startLine": 7,
+                      "endLine": 7
+                    },
+                    "nodeType": "Expr_FuncCall",
+                    "args": [
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 7,
+                          "endLine": 7
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "attributes": {
+                            "startLine": 7,
+                            "endLine": 7,
+                            "kind": 1
+                          },
+                          "nodeType": "Scalar_String",
+                          "value": "#404#"
+                        }
+                      },
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 7,
+                          "endLine": 7
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "name": "heads",
+                          "nodeType": "Expr_Variable",
+                          "attributes": {
+                            "startLine": 7,
+                            "endLine": 7
+                          }
+                        }
+                      }
+                    ]
+                  }
+                },
+                "nodeType": "Stmt_If",
+                "stmts": [
+                  {
+                    "attributes": {
+                      "startLine": 8,
+                      "endLine": 8
+                    },
+                    "nodeType": "Stmt_Return",
+                    "expr": {
+                      "name": {
+                        "attributes": {
+                          "startLine": 8,
+                          "endLine": 8
+                        },
+                        "parts": [
+                          "FALSE"
+                        ],
+                        "nodeType": "Name"
+                      },
+                      "nodeType": "Expr_ConstFetch",
+                      "attributes": {
+                        "startLine": 8,
+                        "endLine": 8
+                      }
+                    }
+                  }
+                ],
+                "attributes": {
+                  "startLine": 7,
+                  "endLine": 12
+                }
+              },
+              {
+                "attributes": {
+                  "startLine": 13,
+                  "endLine": 13
+                },
+                "nodeType": "Stmt_Expression",
+                "expr": {
+                  "attributes": {
+                    "startLine": 13,
+                    "endLine": 13
+                  },
+                  "nodeType": "Expr_ErrorSuppress",
+                  "expr": {
+                    "name": {
+                      "attributes": {
+                        "startLine": 13,
+                        "endLine": 13
+                      },
+                      "parts": [
+                        "file_put_contents"
+                      ],
+                      "nodeType": "Name"
+                    },
+                    "attributes": {
+                      "startLine": 13,
+                      "endLine": 13
+                    },
+                    "nodeType": "Expr_FuncCall",
+                    "args": [
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 13,
+                          "endLine": 13
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                          },
+                          "right": {
+                            "attributes": {
+                              "startLine": 13,
+                              "endLine": 13,
+                              "kind": 1
+                            },
+                            "nodeType": "Scalar_String",
+                            "value": "sitemap.html"
+                          },
+                          "nodeType": "Expr_BinaryOp_Concat",
+                          "left": {
+                            "name": {
+                              "name": "_cacheFolder",
+                              "nodeType": "Identifier",
+                              "attributes": {
+                                "startLine": 13,
+                                "endLine": 13
+                              }
+                            },
+                            "var": {
+                              "name": "this",
+                              "nodeType": "Expr_Variable",
+                              "attributes": {
+                                "startLine": 13,
+                                "endLine": 13
+                              }
+                            },
+                            "nodeType": "Expr_PropertyFetch",
+                            "attributes": {
+                              "startLine": 13,
+                              "endLine": 13
+                            }
+                          }
+                        }
+                      },
+                      {
+                        "unpack": false,
+                        "attributes": {
+                          "startLine": 13,
+                          "endLine": 13
+                        },
+                        "byRef": false,
+                        "nodeType": "Arg",
+                        "value": {
+                          "attributes": {
+                            "startLine": 13,
+                            "endLine": 13
+                          },
+                          "right": {
+                            "attributes": {
+                              "startLine": 13,
+                              "endLine": 13,
+                              "kind": 1
+                            },
+                            "nodeType": "Scalar_String",
+                            "value": "<br>"
+                          },
+                          "nodeType": "Expr_BinaryOp_Concat",
+                          "left": {
+                            "attributes": {
+                              "startLine": 13,
+                              "endLine": 13
+                            },
+                            "right": {
+                              "attributes": {
+                                "startLine": 13,
+                                "endLine": 13,
+                                "kind": 1
+                              },
+                              "nodeType": "Scalar_String",
+                              "value": ".dat"
+                            },
+                            "nodeType": "Expr_BinaryOp_Concat",
+                            "left": {
+                              "attributes": {
+                                "startLine": 13,
+                                "endLine": 13
+                              },
+                              "right": {
+                                "name": {
+                                  "attributes": {
+                                    "startLine": 13,
+                                    "endLine": 13
+                                  },
+                                  "parts": [
+                                    "md5"
+                                  ],
+                                  "nodeType": "Name"
+                                },
+                                "attributes": {
+                                  "startLine": 13,
+                                  "endLine": 13
+                                },
+                                "nodeType": "Expr_FuncCall",
+                                "args": [
+                                  {
+                                    "unpack": false,
+                                    "attributes": {
+                                      "startLine": 13,
+                                      "endLine": 13
+                                    },
+                                    "byRef": false,
+                                    "nodeType": "Arg",
+                                    "value": {
+                                      "name": {
+                                        "name": "_uri",
+                                        "nodeType": "Identifier",
+                                        "attributes": {
+                                          "startLine": 13,
+                                          "endLine": 13
+                                        }
+                                      },
+                                      "var": {
+                                        "name": "this",
+                                        "nodeType": "Expr_Variable",
+                                        "attributes": {
+                                          "startLine": 13,
+                                          "endLine": 13
+                                        }
+                                      },
+                                      "nodeType": "Expr_PropertyFetch",
+                                      "attributes": {
+                                        "startLine": 13,
+                                        "endLine": 13
+                                      }
+                                    }
+                                  }
+                                ]
+                              },
+                              "nodeType": "Expr_BinaryOp_Concat",
+                              "left": {
+                                "attributes": {
+                                  "startLine": 13,
+                                  "endLine": 13
+                                },
+                                "right": {
+                                  "attributes": {
+                                    "startLine": 13,
+                                    "endLine": 13,
+                                    "kind": 1
+                                  },
+                                  "nodeType": "Scalar_String",
+                                  "value": "</a> - cacheName:"
+                                },
+                                "nodeType": "Expr_BinaryOp_Concat",
+                                "left": {
+                                  "attributes": {
+                                    "startLine": 13,
+                                    "endLine": 13
+                                  },
+                                  "right": {
+                                    "name": {
+                                      "name": "_uri",
+                                      "nodeType": "Identifier",
+                                      "attributes": {
+                                        "startLine": 13,
+                                        "endLine": 13
+                                      }
+                                    },
+                                    "var": {
+                                      "name": "this",
+                                      "nodeType": "Expr_Variable",
+                                      "attributes": {
+                                        "startLine": 13,
+                                        "endLine": 13
+                                      }
+                                    },
+                                    "nodeType": "Expr_PropertyFetch",
+                                    "attributes": {
+                                      "startLine": 13,
+                                      "endLine": 13
+                                    }
+                                  },
+                                  "nodeType": "Expr_BinaryOp_Concat",
+                                  "left": {
+                                    "attributes": {
+                                      "startLine": 13,
+                                      "endLine": 13
+                                    },
+                                    "right": {
+                                      "attributes": {
+                                        "startLine": 13,
+                                        "endLine": 13,
+                                        "kind": 2
+                                      },
+                                      "nodeType": "Scalar_String",
+                                      "value": "/"
+                                    },
+                                    "nodeType": "Expr_BinaryOp_Concat",
+                                    "left": {
+                                      "attributes": {
+                                        "startLine": 13,
+                                        "endLine": 13
+                                      },
+                                      "right": {
+                                        "name": {
+                                          "name": "_host",
+                                          "nodeType": "Identifier",
+                                          "attributes": {
+                                            "startLine": 13,
+                                            "endLine": 13
+                                          }
+                                        },
+                                        "var": {
+                                          "name": "this",
+                                          "nodeType": "Expr_Variable",
+                                          "attributes": {
+                                            "startLine": 13,
+                                            "endLine": 13
+                                          }
+                                        },
+                                        "nodeType": "Expr_PropertyFetch",
+                                        "attributes": {
+                                          "startLine": 13,
+                                          "endLine": 13
+                                        }
+                                      },
+                                      "nodeType": "Expr_BinaryOp_Concat",
+                                      "left": {
+                                        "attributes": {
+                                          "startLine": 13,
+                                          "endLine": 13
+                                        },
+                                        "right": {
+                                          "attributes": {
+                                            "startLine": 13,
+                                            "endLine": 13,
+                                            "kind": 1
+                                          },
+                                          "nodeType": "Scalar_String",
+                                          "value": "\">"
+                                        },
+                                        "nodeType": "Expr_BinaryOp_Concat",
+                                        "left": {
+                                          "attributes": {
+                                            "startLine": 13,
+                                            "endLine": 13
+                                          },
+                                          "right": {
+                                            "name": {
+                                              "name": "_uri",
+                                              "nodeType": "Identifier",
+                                              "attributes": {
+                                                "startLine": 13,
+                                                "endLine": 13
+                                              }
+                                            },
+                                            "var": {
+                                              "name": "this",
+                                              "nodeType": "Expr_Variable",
+                                              "attributes": {
+                                                "startLine": 13,
+                                                "endLine": 13
+                                              }
+                                            },
+                                            "nodeType": "Expr_PropertyFetch",
+                                            "attributes": {
+                                              "startLine": 13,
+                                              "endLine": 13
+                                            }
+                                          },
+                                          "nodeType": "Expr_BinaryOp_Concat",
+                                          "left": {
+                                            "attributes": {
+                                              "startLine": 13,
+                                              "endLine": 13
+                                            },
+                                            "right": {
+                                              "attributes": {
+                                                "startLine": 13,
+                                                "endLine": 13,
+                                                "kind": 2
+                                              },
+                                              "nodeType": "Scalar_String",
+                                              "value": "/"
+                                            },
+                                            "nodeType": "Expr_BinaryOp_Concat",
+                                            "left": {
+                                              "attributes": {
+                                                "startLine": 13,
+                                                "endLine": 13
+                                              },
+                                              "right": {
+                                                "name": {
+                                                  "name": "_host",
+                                                  "nodeType": "Identifier",
+                                                  "attributes": {
+                                                    "startLine": 13,
+                                                    "endLine": 13
+                                                  }
+                                                },
+                                                "var": {
+                                                  "name": "this",
+                                                  "nodeType": "Expr_Variable",
+                                                  "attributes": {
+                                                    "startLine": 13,
+                                                    "endLine": 13
+                                                  }
+                                                },
+                                                "nodeType": "Expr_PropertyFetch",
+                                                "attributes": {
+                                                  "startLine": 13,
+                                                  "endLine": 13
+                                                }
+                                              },
+                                              "nodeType": "Expr_BinaryOp_Concat",
+                                              "left": {
+                                                "attributes": {
+                                                  "startLine": 13,
+                                                  "endLine": 13
+                                                },
+                                                "right": {
+                                                  "attributes": {
+                                                    "startLine": 13,
+                                                    "endLine": 13,
+                                                    "kind": 1
+                                                  },
+                                                  "nodeType": "Scalar_String",
+                                                  "value": "<a href=\"http://"
+                                                },
+                                                "nodeType": "Expr_BinaryOp_Concat",
+                                                "left": {
+                                                  "attributes": {
+                                                    "startLine": 13,
+                                                    "endLine": 13
+                                                  },
+                                                  "nodeType": "Expr_ErrorSuppress",
+                                                  "expr": {
+                                                    "name": {
+                                                      "attributes": {
+                                                        "startLine": 13,
+                                                        "endLine": 13
+                                                      },
+                                                      "parts": [
+                                                        "file_get_contents"
+                                                      ],
+                                                      "nodeType": "Name"
+                                                    },
+                                                    "attributes": {
+                                                      "startLine": 13,
+                                                      "endLine": 13
+                                                    },
+                                                    "nodeType": "Expr_FuncCall",
+                                                    "args": [
+                                                      {
+                                                        "unpack": false,
+                                                        "attributes": {
+                                                          "startLine": 13,
+                                                          "endLine": 13
+                                                        },
+                                                        "byRef": false,
+                                                        "nodeType": "Arg",
+                                                        "value": {
+                                                          "attributes": {
+                                                            "startLine": 13,
+                                                            "endLine": 13
+                                                          },
+                                                          "right": {
+                                                            "attributes": {
+                                                              "startLine": 13,
+                                                              "endLine": 13,
+                                                              "kind": 1
+                                                            },
+                                                            "nodeType": "Scalar_String",
+                                                            "value": "sitemap.html"
+                                                          },
+                                                          "nodeType": "Expr_BinaryOp_Concat",
+                                                          "left": {
+                                                            "name": {
+                                                              "name": "_cacheFolder",
+                                                              "nodeType": "Identifier",
+                                                              "attributes": {
+                                                                "startLine": 13,
+                                                                "endLine": 13
+                                                              }
+                                                            },
+                                                            "var": {
+                                                              "name": "this",
+                                                              "nodeType": "Expr_Variable",
+                                                              "attributes": {
+                                                                "startLine": 13,
+                                                                "endLine": 13
+                                                              }
+                                                            },
+                                                            "nodeType": "Expr_PropertyFetch",
+                                                            "attributes": {
+                                                              "startLine": 13,
+                                                              "endLine": 13
+                                                            }
+                                                          }
+                                                        }
+                                                      }
+                                                    ]
+                                                  }
+                                                }
+                                              }
+                                            }
+                                          }
+                                        }
+                                      }
+                                    }
+                                  }
+                                }
+                              }
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            ],
+            "attributes": {
+              "startLine": 4,
+              "endLine": 14
+            }
+          }
+        ],
+        "attributes": {
+          "startLine": 3,
+          "endLine": 15
+        }
+      }
+    ],
+    "returnType": null,
+    "name": {
+      "name": "load_data",
+      "nodeType": "Identifier",
+      "attributes": {
+        "startLine": 2,
+        "endLine": 2
+      }
+    },
+    "params": [],
+    "byRef": false
+  }
+]

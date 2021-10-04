@@ -1,0 +1,43 @@
+<?php
+namespace NS;
+interface Iface extends \A, \B {
+}
+class NameOfClass extends \X implements Iface {
+    function doSomething() {
+        echo "Hello World";
+    }
+}
+$obj = new NameOfClass();
+-----
+Block#1
+    Stmt_Interface
+        name: LITERAL('NS\\Iface')
+        extends[0]: LITERAL('A')
+        extends[1]: LITERAL('B')
+        stmts: Block#2
+    Stmt_Class
+        name: LITERAL('NS\\NameOfClass')
+        extends: LITERAL('X')
+        implements[0]: LITERAL('NS\\Iface')
+        stmts: Block#3
+    Expr_New
+        class: LITERAL('NS\\NameOfClass')
+        result: Var#1
+    Expr_Assign
+        var: Var#2<$obj>
+        expr: Var#1
+        result: Var#3
+    Terminal_Return
+        expr: LITERAL(1)
+
+Block#2
+
+Block#3
+    Stmt_ClassMethod<doSomething>
+
+Function NS\NameOfClass::doSomething():
+Block#1
+    Terminal_Echo
+        expr: LITERAL('Hello World')
+    Terminal_Return
+        expr: LITERAL(NULL)

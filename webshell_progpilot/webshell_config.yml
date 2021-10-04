@@ -1,0 +1,27 @@
+inputs:
+    setDev: false
+    setLanguages:
+        - php
+    setFrameworks:
+        - suitecrm
+        - codeigniter
+        - wordpress
+        - prestashop
+        - symfony
+    setSources: webshell_progpilot/webshell_sources.json
+    setSinks: webshell_progpilot/webshell_sinks.json
+
+outputs:
+    taintedFlow: true
+    setOutfile:
+
+options:
+    setAnalyzeIncludes: true
+    setAnalyzeFunctions: true
+    setAnalyzeHardRules: true
+    setPrintFile: true
+    setPrintWarning: true
+    setPrettyPrint: true
+    setLimitTime: 10000
+    setLimitDefs: 3000000
+    setLimitSize: 500000000

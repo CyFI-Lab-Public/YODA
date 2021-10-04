@@ -1,0 +1,12 @@
+{
+    "sinks": [
+        {"name": "system", "is_function": true, "language": "php", "attack": "Shell", "cwe": "Shell"},
+        {"name": "exec", "is_function": true, "language": "php", "attack": "Shell", "cwe": "Shell"},
+        {"name": "shell_exec", "is_function": true, "language": "php", "attack": "Shell", "cwe": "Shell"},
+        {"name": "passthru", "is_function": true, "language": "php", "attack": "Shell", "cwe": "Shell"},
+        {"name": "proc_open", "is_function": true, "language": "php", "attack": "Shell", "cwe": "Shell"},
+        {"name": "popen", "is_function": true, "language": "php", "attack": "Shell", "cwe": "Shell"},
+        {"name": "extract", "is_function": true, "language": "php", "attack": "Backdoor", "cwe": "Backdoor"},
+        {"name": "eval", "is_function": true, "language": "php", "attack": "Backdoor", "cwe": "Backdoor"}
+    ]
+}

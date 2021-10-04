@@ -1,0 +1,6 @@
+{
+    "require": {
+        "designsecurity/progpilot": "^0.6.0",
+        "nikic/php-parser": "^4.3"
+    }
+}

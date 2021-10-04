@@ -1,0 +1,57 @@
+<?php
+
+$b = 1;
+$c = 2;
+$fn = function($a) use($b, &$c) {
+    $c += $b * $a;
+};
+$fn(3);
+var_dump($c);
+-----
+Block#1
+    Expr_Assign
+        var: Var#1<$b>
+        expr: LITERAL(1)
+        result: Var#2
+    Expr_Assign
+        var: Var#3<$c>
+        expr: LITERAL(2)
+        result: Var#4
+    Expr_Closure<{anonymous}#1>
+        useVars[0]: local<$b>
+        useVars[1]: local<&$c>
+        result: Var#5
+    Expr_Assign
+        var: Var#6<$fn>
+        expr: Var#5
+        result: Var#7
+    Expr_FuncCall
+        name: Var#6<$fn>
+        args[0]: LITERAL(3)
+        result: Var#8
+    Expr_FuncCall
+        name: LITERAL('var_dump')
+        args[0]: Var#3<$c>
+        result: Var#9
+    Terminal_Return
+        expr: LITERAL(1)
+
+Function {anonymous}#1():
+Block#1
+    Expr_Param
+        name: LITERAL('a')
+        result: Var#1<$a>
+    Expr_BinaryOp_Mul
+        left: Var#2<$b>
+        right: Var#1<$a>
+        result: Var#3
+    Expr_BinaryOp_Plus
+        left: Var#4<$c>
+        right: Var#3
+        result: Var#5
+    Expr_Assign
+        var: Var#6<$c>
+        expr: Var#5
+        result: Var#7
+    Terminal_Return
+        expr: LITERAL(NULL)
